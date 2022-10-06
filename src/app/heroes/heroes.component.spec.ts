@@ -12,7 +12,7 @@ describe('HerosComponent', ()=>{
             {id: 2, name: 'Wonderful Women', strength: 24},
             {id: 3, name: 'SuperDude', strength: 55}
         ]
-
+        //mocking service
         mockHeroService = jasmine.createSpyObj(['getHeroes', 'addHero', 'deleteHero']);
 
         component = new HeroesComponent(mockHeroService);
